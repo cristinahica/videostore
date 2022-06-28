@@ -4,19 +4,19 @@ public class Movie {
 	public static final int REGULAR = 0;
 	public static final int NEW_RELEASE = 1;
 	private String _title;
-	private Integer _priceCode;
+	private Integer _prc;
 
 	public Movie(String title, Integer priceCode) {
 		_title = title;
-		_priceCode = priceCode;
+		_prc = priceCode;
 	}
 
-	public Integer getPriceCode() {
-		return _priceCode;
+	public Integer getPrC() {
+		return _prc;
 	}
 
-	public void setPriceCode(Integer arg) {
-		_priceCode = arg;
+	public void setPrCode(Integer arg) {
+		_prc = arg;
 	}
 
 	public String getTitle() {
