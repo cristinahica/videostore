@@ -1,4 +1,7 @@
 # Video Store
+
+Aici au stricat Edu si Andrei. Good
+
 ## Write a system that can build a statement, when given rentals.
 5esrtdyfugihojpl;,mj
 lksdfjlsjf;sdfs;f
