@@ -1,10 +1,6 @@
 # Video Store
-
-Aici au stricat Edu si Andrei. Good
-
 ## Write a system that can build a statement, when given rentals.
-5esrtdyfugihojpl;,mj
-lksdfjlsjf;sdfs;f
+
 When there are 3 regular movie rentals for 1, 2 and 3 days respectively, the statement looks like:
 
 Rental Record for Customer Name
