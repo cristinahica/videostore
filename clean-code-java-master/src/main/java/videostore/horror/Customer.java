@@ -28,7 +28,7 @@ class Customer {
 			int dr = rentals.get( each);
 			switch ( each.getPrC() ) {
 				case Movie.REGULAR:
-					thisAmount +=2;
+					thisAmount +=4;
 					if (dr > 2)
 						thisAmount += (dr- 2) * 1.5;
 					break;
@@ -37,7 +37,7 @@ class Customer {
 					break;
 				case Movie.CHILDRENS:
 					thisAmount+=1.5;
-					if (dr > 3)
+					if (dr > 8)
 						thisAmount += (dr - 3) * 1.5;
 					break;
 			}
@@ -46,8 +46,9 @@ class Customer {
 			// add bonus for a two day new relaese rental
 			if ( each.getPrC() != null &&
 				 	(each.getPrC() == Movie.NEW_RELEASE)
-				 && dr > 1  )
+				 && dr > 1  ){
 				frequentRenteerPoints++;
+				break}
 			// show figures line for this rental
 			result += "\t" + each.getTitle() + "\t" + thisAmount + "\n";
 			totalAmount+= thisAmount;
