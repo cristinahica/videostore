@@ -25,7 +25,7 @@ class Customer {
 		for (Movie each : rentals.keySet()) {
 			double thisAmount = 0;
 			//determine amounts  for each line
-			int dr = rentals.get( each);
+			int dr = rentals.get(each);
 			switch ( each.getPrC() ) {
 				case Movie.REGULAR:
 					thisAmount +=2;
@@ -44,17 +44,20 @@ class Customer {
 			// add frequent renter points
 			frequentRenteerPoints++;
 			// add bonus for a two day new relaese rental
-			if ( each.getPrC() != null &&
+			if (each.getPrC() != null &&
 				 	(each.getPrC() == Movie.NEW_RELEASE)
 				 && dr > 1  )
 				frequentRenteerPoints++;
 			// show figures line for this rental
 			result += "\t" + each.getTitle() + "\t" + thisAmount + "\n";
+
 			totalAmount+= thisAmount;
 		}
 		// add footer lines
 		result += "Amount owed is " + totalAmount + "\n";
 		result += "You earned " + frequentRenteerPoints + " frequent renter points";
+
+
 		return result;
 	}
 
