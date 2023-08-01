@@ -1,1 +1,2 @@
 I want a conflict!
+Add line 1
